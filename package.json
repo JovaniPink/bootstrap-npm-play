@@ -41,6 +41,6 @@
     "nodemon": "2.0.4",
     "postcss-cli": "7.1.1",
     "purgecss": "3.0.0",
-    "serve": "11.3.1"
+    "serve": "11.3.2"
   }
 }
