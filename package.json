@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "autoprefixer": "10.0.1",
-    "node-sass": "4.14.1",
+    "node-sass": "5.0.0",
     "nodemon": "2.0.6",
     "postcss-cli": "8.2.0",
     "purgecss": "3.0.0",
