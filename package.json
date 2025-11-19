@@ -33,7 +33,7 @@
   "dependencies": {
     "bootstrap": "5.0.1",
     "jquery": "3.6.0",
-    "popper.js": "1.16.1-lts"
+    "popper.js": "1.16.1"
   },
   "devDependencies": {
     "autoprefixer": "10.2.5",
