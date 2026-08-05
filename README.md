@@ -8,7 +8,7 @@
 
 ## About
 
-`bootstrap-npm-starter` is a GitHub template repository for creating new Bootstrap-powered npm projects, maintained by Bootstrap co-author @mdo. You can also use it as your own Bootstrap prototyping sandbox. It's built with Bootstrap v4.5.0 with plans to update for v5.
+`bootstrap-npm-starter` is a GitHub template repository for creating new Bootstrap-powered npm projects, maintained by Bootstrap co-author @mdo. You can also use it as your own Bootstrap prototyping sandbox. It's built with Bootstrap v5 and current Node.js tooling.
 
 [![Build Status](https://github.com/twbs/bootstrap-npm-starter/workflows/CI/badge.svg)](https://github.com/twbs/bootstrap-npm-starter/actions)
 
@@ -19,10 +19,10 @@ Setup as a starter template, you can easily generate a new GitHub repository. Fr
 ## What's included
 
 - Single HTML page (`index.html`) to demonstrate how to include Bootstrap.
-- Includes Bootstrap (currently using v4.5.0) source files via npm.
+- Includes Bootstrap 5 source files via npm.
 - npm scripts (see `package.json`) for compiling and autoprefixing Sass, watching for changes, and starting a basic local server.
 - Example stylesheet (`scss/starter.scss`) highlighting two ways to include and customize Bootstrap.
-- Example JavaScript file (`assets/js/starter.js`) showing how to import all of Bootstrap, or just the parts you need.
+- Loads Bootstrap's JavaScript bundle directly from the installed package.
 
 ## Usage
 
@@ -77,11 +77,7 @@ Uncomment specific lines as needed, then recompile to use them.
 
 ### Optimizing JS
 
-Similar to optimizing CSS, we publish individual scripts for each of our plugins. This allows you to import only what you need, versus the entire bundle and dependencies. For example, if you don't plan on using dropdowns, tooltips, or popovers, you can safely omit the Popper.js depdendency. Bootstrap 4 requires jQuery though, so you won't be able to safely remove that until v5 launches.
-
-See the `js/starter.js` file for an example of how to import all of Bootstrap's JS or just the individual pieces. By default we've only imported our modal JavaScript since we have no need for anything else.
-
-You can add more options here, or import the entire `bootstrap-bundle.min.js` file, to get all JavaScript plugins and Popper.js.
+Bootstrap 5 has no jQuery dependency and its JavaScript bundle includes Popper. This starter loads `bootstrap.bundle.min.js` directly from `node_modules`, so all JavaScript plugins and their data attributes are available.
 
 ### PurgeCSS
 
